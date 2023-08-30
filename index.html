@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>phone hunter</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.3/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <h1 class="text-5xl text-purple-400 text-center my-10">phon hunter</h1>
+  <main class="w-4/6 mx-auto">
+    <section>
+      <div class="bg-gray-200 py-3 rounded-lg">
+        <input id="input" type="text" placeholder="serch...." class="input input-bordered w-full max-w-xs" />
+        <button onclick="search()" class="btn btn-accent">search</button>
+
+        <!-- <input id="input2" type="text" placeholder="serch" class="input input-bordered w-full max-w-xs" />
+        <button onclick="search2 ()" class="btn btn-accent">search</button> -->
+      </div>
+    </section>
+    <section>
+      <div>
+        <span id="loading" class="text-center my-7 loading loading-spinner loading-lg hidden"></span>
+      </div>
+     <div id="card-container"class="grid grid-cols-1 md:grid-cols-3">
+           
+     </div>
+      
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="">open modal</button> -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <form method="dialog" class="modal-box">
+        <!-- <h3 class="font-bold text-lg">hello</h3>
+        <p class="py-4">Press ESC key or click the button below to close</p> -->
+        <div id="adding"></div>
+        
+        <div  class="modal-action">
+          <!-- if there is a button in form, it will close the modal -->
+          <div class="flex items-center justify-center">
+            <button class="btn bg-slate-500">Close</button>
+          </div>
+        </div>
+      </form>
+    </dialog>
+
+    <div id="show-btn" class="hidden text-center ">
+      <button onclick="showBtnAll()" class="btn btn-accent">Show all</button>
+    </div>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>

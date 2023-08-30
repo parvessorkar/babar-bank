@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practice</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.3/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-4/6 mx-auto ">
+  <h1 class="text-5xl text-center text-purple-400 my-10">phone hunter</h1>
+  <main>
+    <section>
+      <div class="bg-gray-400 py-3 my-9 rounded-lg">
+        <input id="input-search" type="text" placeholder="search..." class="input input-bordered w-full max-w-xs" />
+        <button onclick="searchFeild()" class="btn btn-active btn-accent">search</button>
+      </div>
+      <div>
+        <span id="load" class="loading loading-spinner loading-lg hidden"></span>
+      </div>
+    </section>
+  <section>
+    <div id="container" class="grid grid-cols-1 md:grid-cols-3">
+
+    </div>
+   <div class="flex justify-center my-6">
+    <button id="show" onclick="showAll" class="btn btn-active btn-accent hidden">show all</button>
+   </div>
+  </section>
+  </main>
+  <script src="second.js"></script>
+</body>
+</html>
